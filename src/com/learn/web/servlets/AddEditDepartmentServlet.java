@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * Created by RUSLAN77 on  29.01.2018 in Ukraine
  */
@@ -24,9 +23,7 @@ public class AddEditDepartmentServlet extends HttpServlet {
         if (paramId != null) {
             Integer departmentId = Integer.valueOf(paramId);
             Department department = DepartmentsHolder.getDepartmentById(departmentId);
-            String departmentName = department.getName();
-            req.setAttribute("editedName", departmentName);
-            req.setAttribute("departmentId", departmentId);
+            req.setAttribute("department", department);
         }
         req.getRequestDispatcher("addEditDepartment.jsp").forward(req, resp);
     }

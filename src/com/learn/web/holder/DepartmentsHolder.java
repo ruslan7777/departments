@@ -34,4 +34,10 @@ public class DepartmentsHolder {
     public static Department getDepartmentById(Integer id) {
         return departmentMap.get(id);
     }
+
+    public static void removeDepartment (Integer paramId){
+        departmentMap.remove(paramId);
+    }
+
 }
+

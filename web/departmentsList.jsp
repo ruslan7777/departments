@@ -18,20 +18,22 @@
     <table>
         <tr>
             <td>
-                <a href="#?${item.id}">${item.name}</a>
+                <%--<a href="#?${item.id}">${item.name}</a>--%>
+                <a href="/usersList.jsp">${item.name}</a>
             </td>
             <td>
                     <%--<a href="#?${item.id}">Edit</a>--%>
                 <a href="/addEditDepartment?departmentId=${item.id}">Edit</a>
             </td>
             <td>
-                <a href="#?${item.id}">Remove</a>
+                <a href="/RemoveDepartments?departmentId=${item.id}">Remove</a>
             </td>
         </tr>
     </table>
 </c:forEach>
 
 <a href="/addEditDepartment">Add Department</a>
+
 
 
 </body>

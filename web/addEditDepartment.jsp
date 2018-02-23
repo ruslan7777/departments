@@ -13,9 +13,9 @@
     <title>Departments</title>
 </head>
 <body>
-<form action="/addEditDepartment?departmentId=${departmentId}" method="post" >
+<form action="/addEditDepartment?departmentId=${department.id}" method="post">
     <input type="text" name="departmentName" value=${editedName}> Name </input >
-    <input type="submit" value="Save" />
+    <input type="submit" value="Save"/>
 
 </form>
 

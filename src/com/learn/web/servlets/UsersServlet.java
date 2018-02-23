@@ -1,31 +1,24 @@
 package com.learn.web.servlets;
 
-import com.learn.web.holder.DepartmentsHolder;
-import com.learn.web.model.Department;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
+@WebServlet("/usersServlet")
 /**
- * Created by RUSLAN77 on  29.01.2018 in Ukraine
+ * Created by RUSLAN77 on  23.02.2018 in Ukraine
  */
-@WebServlet("/departmentsServlet")
-public class DepartmentsServlet extends HttpServlet {
+public class UsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        DepartmentsHolder.addDepartment(new Department(1, "fdfd"));
-        req.setAttribute("listOfDepartments", DepartmentsHolder.getDepartments());
-        req.getRequestDispatcher("departmentsList.jsp").forward(req, resp);
+//        req.setAttribute("usersList", );
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+
     }
 }
