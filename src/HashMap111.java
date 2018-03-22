@@ -1,8 +1,5 @@
-package com.learn.web.holder;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 /**
  * Created by RUSLAN77 on  30.01.2018 in Ukraine
@@ -49,7 +46,7 @@ public class HashMap111 {
 //            Integer frequency = hashMap.get(number);
 //            hashMap.put(number, frequency == null ? 1 : frequency + 1);
 //        }
-//        System.out.println(hashMap);
+//
 
 
         Map<String, Pet> hashMap = new HashMap<>();

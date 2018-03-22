@@ -14,27 +14,27 @@
 </head>
 
 <body>
+LIST OF DEPARTMENTS:   <br>  <br>
+
 <c:forEach var="item" items="${listOfDepartments}">
     <table>
         <tr>
             <td>
-                <%--<a href="#?${item.id}">${item.name}</a>--%>
-                <a href="/usersList.jsp">${item.name}</a>
+                    <%--<a href="#?${item.id}">${item.name}</a>--%>
+                <a href="/usersServlet?departmentId=${item.id}">${item.name}</a>
             </td>
             <td>
                     <%--<a href="#?${item.id}">Edit</a>--%>
                 <a href="/addEditDepartment?departmentId=${item.id}">Edit</a>
             </td>
             <td>
-                <a href="/RemoveDepartments?departmentId=${item.id}">Remove</a>
+                <a href="/removeDepartments?departmentId=${item.id}">Remove</a>
             </td>
         </tr>
     </table>
 </c:forEach>
 
 <a href="/addEditDepartment">Add Department</a>
-
-
 
 </body>
 </html>
